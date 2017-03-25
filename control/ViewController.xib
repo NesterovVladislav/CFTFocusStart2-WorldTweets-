@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="0FW-vR-1I8" id="nTF-yL-rNT"/>
+                <outlet property="nameUser" destination="CXr-2M-gIn" id="zqc-oU-YMG"/>
+                <outlet property="showButton" destination="yq0-wz-ORw" id="I5I-OM-VYU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0FW-vR-1I8">
+                    <color key="color" red="0.0023150858700000001" green="0.0095355935429999993" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите имя пользователя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESj-Qd-NU6">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CXr-2M-gIn">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="jCI-uQ-Ag3"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yq0-wz-ORw">
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="Показать твиты"/>
+                    <connections>
+                        <action selector="authorization" destination="-1" eventType="touchUpInside" id="Dbo-gn-Wyr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94588344359999998" green="0.92981854809999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="CXr-2M-gIn" firstAttribute="top" secondItem="0FW-vR-1I8" secondAttribute="bottom" constant="26" id="0yG-IK-8Qf"/>
+                <constraint firstItem="0FW-vR-1I8" firstAttribute="top" secondItem="ESj-Qd-NU6" secondAttribute="bottom" constant="32" id="3d1-3r-ReB"/>
+                <constraint firstItem="ESj-Qd-NU6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Cx6-JN-C5C"/>
+                <constraint firstItem="CXr-2M-gIn" firstAttribute="top" secondItem="0FW-vR-1I8" secondAttribute="bottom" constant="26" id="H2z-fi-rLi"/>
+                <constraint firstItem="ESj-Qd-NU6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="89" id="hll-FC-4jU"/>
+                <constraint firstItem="0FW-vR-1I8" firstAttribute="top" secondItem="ESj-Qd-NU6" secondAttribute="bottom" constant="32" id="isu-qY-xND"/>
+                <constraint firstItem="yq0-wz-ORw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k5K-FZ-FAW"/>
+                <constraint firstItem="yq0-wz-ORw" firstAttribute="top" secondItem="CXr-2M-gIn" secondAttribute="bottom" constant="39" id="kBv-YJ-398"/>
+                <constraint firstItem="0FW-vR-1I8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r38-rE-Bl1"/>
+                <constraint firstItem="yq0-wz-ORw" firstAttribute="top" secondItem="CXr-2M-gIn" secondAttribute="bottom" constant="39" id="rTt-VG-A5D"/>
+                <constraint firstItem="CXr-2M-gIn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="v3h-hL-sLz"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
